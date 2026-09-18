@@ -1,0 +1,252 @@
+import type { Question } from './types'
+
+export const ALCOHOL_QUESTIONS: Question[] = [
+  {
+    id: 'al-1',
+    category: 'alcohol',
+    prompt: 'In New Jersey, a driver 21 or older is legally intoxicated at a blood alcohol concentration (BAC) of:',
+    choices: ['0.02%', '0.04%', '0.08%', '0.10%'],
+    answer: 2,
+    explanation: 'The adult limit is 0.08%. You can still be convicted below that if alcohol or drugs impaired your driving.',
+  },
+  {
+    id: 'al-2',
+    category: 'alcohol',
+    prompt: 'For a driver under 21, New Jersey’s zero-tolerance BAC limit is:',
+    choices: ['0.00%', '0.01%', '0.05%', '0.08%'],
+    answer: 1,
+    explanation:
+      'Under 21, a BAC of 0.01% or more brings penalties including license suspension, community service and an alcohol program.',
+  },
+  {
+    id: 'al-3',
+    category: 'alcohol',
+    prompt: 'The BAC limit for a driver operating a commercial vehicle is:',
+    choices: ['0.02%', '0.04%', '0.08%', '0.10%'],
+    answer: 1,
+    explanation: 'Commercial drivers are held to 0.04%.',
+  },
+  {
+    id: 'al-4',
+    category: 'alcohol',
+    prompt: 'Under New Jersey’s implied consent law, if you refuse to submit to a breath test when lawfully arrested for DWI:',
+    choices: [
+      'Nothing happens until you are convicted',
+      'You face fines and license forfeiture separate from any DWI conviction',
+      'Police must release you',
+      'You can request a test later instead',
+    ],
+    answer: 1,
+    explanation:
+      'By driving in New Jersey you consent to a breath test. Refusal carries its own fines, license forfeiture, an ignition interlock requirement and an alcohol education program — even if you are not convicted of DWI.',
+  },
+  {
+    id: 'al-5',
+    category: 'alcohol',
+    prompt: 'Which of the following speeds up the rate at which alcohol leaves your body?',
+    choices: ['Coffee', 'A cold shower', 'Exercise', 'Nothing — only time'],
+    answer: 3,
+    explanation:
+      'The liver processes alcohol at a roughly fixed rate — about one drink per hour. Coffee, food, fresh air and exercise do not sober you up.',
+  },
+  {
+    id: 'al-6',
+    category: 'alcohol',
+    prompt: 'Alcohol first affects which driving ability?',
+    choices: [
+      'Judgment and self-control',
+      'Hearing',
+      'Tire grip',
+      'Night vision only',
+    ],
+    answer: 0,
+    explanation:
+      'Judgment and inhibition go first — which is why impaired drivers feel more confident while actually reacting more slowly and steering less precisely.',
+  },
+  {
+    id: 'al-7',
+    category: 'alcohol',
+    prompt: 'A first DWI conviction with a BAC of 0.08% but under 0.10% can result in:',
+    choices: [
+      'A warning only',
+      'Fines, jail time up to 30 days, an ignition interlock device and Intoxicated Driver Resource Center attendance',
+      'A 5-year license revocation',
+      'Points only, with no fine',
+    ],
+    answer: 1,
+    explanation:
+      'A first offense brings fines and surcharges, up to 30 days in jail, mandatory IDRC attendance (12-48 hours), an ignition interlock device, and insurance surcharges for three years.',
+  },
+  {
+    id: 'al-8',
+    category: 'alcohol',
+    prompt: 'New Jersey’s open container law says that having an open container of alcohol in the passenger area of a vehicle is:',
+    choices: [
+      'Legal if the driver is not drinking',
+      'Illegal for the driver and passengers, with fines for violations',
+      'Legal for passengers only',
+      'Legal if the vehicle is parked',
+    ],
+    answer: 1,
+    explanation: 'Open containers are prohibited in the passenger compartment. A first offense is a fine; a second adds community service.',
+  },
+  {
+    id: 'al-9',
+    category: 'alcohol',
+    prompt: 'How many points must you accumulate before New Jersey suspends your license?',
+    choices: ['6 points', '9 points', '12 points', '15 points'],
+    answer: 2,
+    explanation: 'Twelve or more points on your current driving record triggers a suspension. At 6 or more points in three years you pay a surcharge.',
+  },
+  {
+    id: 'al-10',
+    category: 'alcohol',
+    prompt: 'How can points be removed from your New Jersey driving record?',
+    choices: [
+      'They never come off',
+      'Three points are removed for each year of violation-free driving, and completing an approved driver improvement or defensive driving course can remove points',
+      'Paying the fine removes them',
+      'They expire after 30 days',
+    ],
+    answer: 1,
+    explanation:
+      'You get a 3-point credit for each year without a violation or suspension, and approved defensive driving or driver improvement courses can subtract points as well.',
+  },
+  {
+    id: 'al-11',
+    category: 'alcohol',
+    prompt: 'Driving while your license is suspended in New Jersey results in:',
+    choices: [
+      'A warning',
+      'Additional fines, an extended suspension, and possible jail time',
+      'Points only',
+      'Nothing if you were driving to work',
+    ],
+    answer: 1,
+    explanation: 'Driving on the suspended list adds fines, extends the suspension and can bring jail time — especially after a DWI suspension.',
+  },
+  {
+    id: 'al-12',
+    category: 'alcohol',
+    prompt: 'Prescription and over-the-counter medications:',
+    choices: [
+      'Never affect driving',
+      'Can impair driving, and you can be charged with DWI for driving while impaired by them',
+      'Only matter if combined with alcohol',
+      'Are exempt from impaired driving laws',
+    ],
+    answer: 1,
+    explanation:
+      'DWI covers any intoxicant. Antihistamines, sedatives, painkillers and cold medicine can all impair you — read the labels and ask your pharmacist.',
+  },
+  {
+    id: 'al-13',
+    category: 'alcohol',
+    prompt: 'Under 21 and convicted of using a fake ID to buy alcohol, or of underage drinking in a vehicle, you may lose your driving privileges for:',
+    choices: ['24 hours', 'Up to 6 months', '5 years', 'No suspension applies'],
+    answer: 1,
+    explanation:
+      'Alcohol-related offenses by drivers under 21 carry license penalties of up to six months, plus community service and a required alcohol program.',
+  },
+  {
+    id: 'al-14',
+    category: 'alcohol',
+    prompt: 'A standard drink — 12 oz of beer, 5 oz of wine or 1.5 oz of liquor — takes roughly how long for the body to eliminate?',
+    choices: ['15 minutes', 'About one hour', 'Three hours', 'Five hours'],
+    answer: 1,
+    explanation: 'Plan on about an hour per drink — and remember that BAC can still be rising after you stop drinking.',
+  },
+  {
+    id: 'al-15',
+    category: 'alcohol',
+    prompt: 'Which factors affect how alcohol impairs you?',
+    choices: [
+      'Body weight, how fast you drink, food in your stomach and any medications',
+      'Only the type of alcohol',
+      'Only how much sleep you had',
+      'Only your age',
+    ],
+    answer: 0,
+    explanation: 'Amount and speed of drinking, body weight, food and medications all change your BAC and impairment level.',
+  },
+  {
+    id: 'al-16',
+    category: 'alcohol',
+    prompt: 'An ignition interlock device:',
+    choices: [
+      'Limits vehicle speed',
+      'Prevents the vehicle from starting if it detects alcohol on the driver’s breath',
+      'Records your location',
+      'Disables the radio',
+    ],
+    answer: 1,
+    explanation: 'New Jersey requires interlocks after DWI convictions and refusals; tampering with one is a separate offense.',
+  },
+  {
+    id: 'al-17',
+    category: 'alcohol',
+    prompt: 'Using a hand-held cell phone while driving in New Jersey carries:',
+    choices: [
+      'A warning for the first offense',
+      'Fines that increase with each offense, plus 3 points and possible license suspension on a third offense',
+      'Points only',
+      'No penalty if you were stopped in traffic',
+    ],
+    answer: 1,
+    explanation:
+      'Fines escalate with each offense; a third or subsequent offense adds 3 points and can mean a 90-day suspension.',
+  },
+  {
+    id: 'al-18',
+    category: 'alcohol',
+    prompt: 'A probationary (GDL) driver who accumulates enough points may be required to:',
+    choices: [
+      'Do nothing',
+      'Attend a driver improvement program or face suspension',
+      'Retake only the vision test',
+      'Pay a fee to erase the record',
+    ],
+    answer: 1,
+    explanation:
+      'Probationary drivers face stricter consequences — accumulating points can require a driver improvement program and can lead to suspension sooner than for a basic license holder.',
+  },
+  {
+    id: 'al-19',
+    category: 'alcohol',
+    prompt: 'You are at a party and have been drinking. The safest plan is to:',
+    choices: [
+      'Wait 30 minutes and drive',
+      'Arrange a ride, use a rideshare, or stay overnight',
+      'Drive slowly on back roads',
+      'Drink coffee first',
+    ],
+    answer: 1,
+    explanation: 'The only reliable plan is not to drive. Decide before you drink how you are getting home.',
+  },
+  {
+    id: 'al-20',
+    category: 'alcohol',
+    prompt: 'Insurance surcharges for a DWI conviction in New Jersey:',
+    choices: [
+      'Do not exist',
+      'Are charged for three years and cost thousands of dollars in total',
+      'Are a one-time $100 fee',
+      'Apply only to drivers under 21',
+    ],
+    answer: 1,
+    explanation: 'On top of fines and court costs, a DWI brings annual surcharges for three years — a total cost that reaches many thousands of dollars.',
+  },
+  {
+    id: 'al-21',
+    category: 'alcohol',
+    prompt: 'Which statement about drugs and driving is true in New Jersey?',
+    choices: [
+      'Only illegal drugs can lead to a DWI charge',
+      'Driving under the influence of any drug — legal or illegal, including cannabis — is a DWI offense',
+      'Cannabis is exempt because it is legal for adults',
+      'Drug impairment is a minor infraction',
+    ],
+    answer: 1,
+    explanation: 'Legalization did not change impaired-driving law. Driving while impaired by cannabis or any drug is prosecuted as DWI.',
+  },
+]
