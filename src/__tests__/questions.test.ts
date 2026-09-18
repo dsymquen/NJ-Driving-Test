@@ -1,7 +1,9 @@
+import { existsSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { QUESTIONS, questionsInCategory, TOTAL_QUESTIONS } from '../data/questions'
 import { CATEGORIES } from '../data/types'
-import { SIGN_BY_ID, SIGNS } from '../data/signs'
+import { SIGN_BY_CODE, SIGNS } from '../data/signs'
 import { withShuffledChoices } from '../lib/quiz'
 
 describe('question bank', () => {
@@ -31,7 +33,7 @@ describe('question bank', () => {
 
   it('only references signs that exist', () => {
     for (const q of QUESTIONS) {
-      if (q.sign) expect(SIGN_BY_ID[q.sign], `${q.id} -> ${q.sign}`).toBeDefined()
+      if (q.sign) expect(SIGN_BY_CODE[q.sign], `${q.id} -> ${q.sign}`).toBeDefined()
     }
   })
 
@@ -64,17 +66,25 @@ describe('question bank', () => {
 })
 
 describe('sign catalog', () => {
-  it('uses unique ids', () => {
-    const ids = SIGNS.map((s) => s.id)
-    expect(new Set(ids).size).toBe(ids.length)
+  it('uses unique MUTCD codes', () => {
+    const codes = SIGNS.map((s) => s.code)
+    expect(new Set(codes).size).toBe(codes.length)
   })
 
-  it('gives every sign a meaning and either text or a symbol', () => {
+  it('describes every sign with a shape, a color and a meaning', () => {
     for (const sign of SIGNS) {
-      expect(sign.meaning.length, sign.id).toBeGreaterThan(20)
-      if (sign.shape !== 'crossbuck') {
-        expect(Boolean(sign.lines || sign.glyph), sign.id).toBe(true)
-      }
+      expect(sign.meaning.length, sign.code).toBeGreaterThan(20)
+      expect(sign.shape.length, sign.code).toBeGreaterThan(2)
+      expect(sign.color.length, sign.code).toBeGreaterThan(2)
+    }
+  })
+
+  it('has prerendered artwork committed for every sign', () => {
+    const dir = join(process.cwd(), 'public', 'signs')
+    for (const sign of SIGNS) {
+      const file = join(dir, `${sign.code}.svg`)
+      expect(existsSync(file), file).toBe(true)
+      expect(readFileSync(file, 'utf8').startsWith('<svg'), sign.code).toBe(true)
     }
   })
 })

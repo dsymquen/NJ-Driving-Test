@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { JSX } from 'react'
 import { CATEGORY_BY_ID } from '../data/types'
-import { SIGN_BY_ID } from '../data/signs'
 import type { ShuffledQuestion } from '../lib/quiz'
 import { formatDuration } from '../lib/quiz'
 import { Sign } from './Sign'
@@ -96,7 +95,7 @@ export function Quiz({ mode, title, items, onAnswer, onFinish, onQuit }: QuizPro
     return () => window.removeEventListener('keydown', onKey)
   })
 
-  const sign = current.question.sign ? SIGN_BY_ID[current.question.sign] : undefined
+  const signCode = current.question.sign
   const revealed = instant && pick !== null
   const isLast = index + 1 === items.length
 
@@ -123,9 +122,9 @@ export function Quiz({ mode, title, items, onAnswer, onFinish, onQuit }: QuizPro
         <span className="eyebrow">{CATEGORY_BY_ID[current.question.category].short}</span>
         <h2 className="question">{current.question.prompt}</h2>
 
-        {sign ? (
+        {signCode ? (
           <div className="sign-frame">
-            <Sign spec={sign} size={150} title="Road sign shown in this question" />
+            <Sign code={signCode} size={200} title="Road sign shown in this question" />
           </div>
         ) : null}
 

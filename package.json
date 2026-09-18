@@ -6,22 +6,24 @@
   "description": "Study app for the New Jersey MVC driver knowledge test",
   "scripts": {
     "dev": "vite",
+    "signs": "node scripts/generate-signs.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc -b --noEmit false --emitDeclarationOnly false",
-    "deploy": "npm run build && wrangler deploy",
-    "cf:dev": "npm run build && wrangler dev",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "deploy": "npm run build && wrangler deploy",
+    "cf:dev": "npm run build && wrangler dev"
   },
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "@types/node": "^26.6.1",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
+    "mutcd-ts": "^0.2.3",
     "typescript": "^5.9.2",
     "vite": "^7.1.3",
     "vitest": "^5.0.1",

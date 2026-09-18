@@ -152,7 +152,7 @@ export function Home({
         </button>
         <button className="action" onClick={() => onGo('signs')}>
           <b>Road sign gallery</b>
-          <span>Every shape and color, drawn and explained</span>
+          <span>63 official MUTCD signs, with what each means in NJ</span>
         </button>
         <button className="action" onClick={() => onGo('flashcards')}>
           <b>Flashcards</b>

@@ -5,7 +5,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-1',
     category: 'signs',
     prompt: 'What does this sign mean?',
-    sign: 'stop',
+    sign: 'R1-1',
     choices: [
       'Slow down and proceed if the way is clear',
       'Come to a complete stop, then yield to pedestrians and cross traffic',
@@ -28,7 +28,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-3',
     category: 'signs',
     prompt: 'A downward-pointing triangle sign means:',
-    sign: 'yield',
+    sign: 'R1-2',
     choices: [
       'Stop and wait for a signal',
       'Slow down and give the right of way; stop if necessary',
@@ -56,7 +56,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-5',
     category: 'signs',
     prompt: 'This sign warns you that:',
-    sign: 'curve-right',
+    sign: 'W1-2',
     choices: [
       'The road curves to the right ahead',
       'You must turn right',
@@ -70,7 +70,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-6',
     category: 'signs',
     prompt: 'What does this sign mean?',
-    sign: 'slippery',
+    sign: 'W8-5',
     choices: [
       'Loose gravel ahead',
       'The road is slippery when wet — slow down and avoid sudden moves',
@@ -85,7 +85,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-7',
     category: 'signs',
     prompt: 'This sign means:',
-    sign: 'merge',
+    sign: 'W4-1',
     choices: [
       'Two-way traffic ahead',
       'Traffic from another road is merging with yours — adjust speed or change lanes',
@@ -99,7 +99,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-8',
     category: 'signs',
     prompt: 'What does this sign tell you?',
-    sign: 't-intersection',
+    sign: 'W2-4',
     choices: [
       'A bridge is ahead',
       'The road you are on ends — you must turn right or left',
@@ -113,7 +113,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-9',
     category: 'signs',
     prompt: 'A five-sided (pentagon) sign indicates:',
-    sign: 'school-zone',
+    sign: 'S1-1',
     choices: ['A no-passing zone', 'A school zone or school crossing', 'A railroad crossing', 'A hospital nearby'],
     answer: 1,
     explanation:
@@ -123,7 +123,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-10',
     category: 'signs',
     prompt: 'A round (circular) sign warns you of:',
-    sign: 'rr-advance',
+    sign: 'W10-1',
     choices: ['A traffic circle', 'A railroad crossing ahead', 'A dead end', 'A detour'],
     answer: 1,
     explanation: 'The round yellow sign with a black X and two Rs is the advance railroad crossing warning — the only round road sign.',
@@ -132,7 +132,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-11',
     category: 'signs',
     prompt: 'This white X-shaped sign marks:',
-    sign: 'crossbuck',
+    sign: 'R15-1',
     choices: [
       'The railroad crossing itself — yield to trains',
       'A closed road',
@@ -147,7 +147,6 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-12',
     category: 'signs',
     prompt: 'A pennant-shaped (sideways triangle) sign posted on the LEFT side of the road means:',
-    sign: 'no-passing-zone',
     choices: ['Left lane closed', 'No passing zone', 'Divided highway begins', 'Slow-moving vehicle ahead'],
     answer: 1,
     explanation:
@@ -157,7 +156,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-13',
     category: 'signs',
     prompt: 'Orange signs and cones mean:',
-    sign: 'road-work',
+    sign: 'W20-1',
     choices: [
       'A construction or maintenance work zone',
       'A recreation area',
@@ -171,7 +170,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-14',
     category: 'signs',
     prompt: 'What color is used for signs that give directions, distances and exits?',
-    sign: 'guide-exit',
+    sign: 'D1-1',
     choices: ['Blue', 'Brown', 'Green', 'Yellow'],
     answer: 2,
     explanation: 'Green signs are guide signs: routes, exits, distances and destinations.',
@@ -180,7 +179,6 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-15',
     category: 'signs',
     prompt: 'A blue sign along the highway tells you about:',
-    sign: 'services-hospital',
     choices: [
       'Motorist services such as hospitals, rest areas, fuel and food',
       'Construction ahead',
@@ -194,7 +192,6 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-16',
     category: 'signs',
     prompt: 'Brown signs mark:',
-    sign: 'recreation',
     choices: ['Detours', 'Parks, historic sites and recreational areas', 'Hospitals', 'Toll plazas'],
     answer: 1,
     explanation: 'Brown = public recreation and cultural interest: state parks, campgrounds, historic sites.',
@@ -203,7 +200,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-17',
     category: 'signs',
     prompt: 'Fluorescent yellow-green signs are used for:',
-    sign: 'pedestrian-crossing',
+    sign: 'W11-2',
     choices: [
       'Pedestrian, bicycle and school warnings',
       'Emergency detours',
@@ -217,7 +214,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-18',
     category: 'signs',
     prompt: 'You see this sign. What must you do?',
-    sign: 'do-not-enter',
+    sign: 'R5-1',
     choices: [
       'Enter slowly with your headlights on',
       'Do not drive into this roadway at all',
@@ -232,7 +229,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-19',
     category: 'signs',
     prompt: 'What does this sign mean?',
-    sign: 'divided-begins',
+    sign: 'W6-1',
     choices: [
       'The roadway ahead is divided by a median — keep right of the divider',
       'A bridge is out ahead',
@@ -247,7 +244,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-20',
     category: 'signs',
     prompt: 'This sign means:',
-    sign: 'two-way',
+    sign: 'W6-3',
     choices: [
       'Passing is permitted',
       'You are leaving a one-way roadway and will meet oncoming traffic',
@@ -261,7 +258,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-21',
     category: 'signs',
     prompt: 'You see this sign while driving. It means:',
-    sign: 'stop-ahead',
+    sign: 'W3-1',
     choices: [
       'A stop sign is ahead — begin slowing down',
       'Stop immediately in your lane',
@@ -274,23 +271,22 @@ export const SIGN_QUESTIONS: Question[] = [
   {
     id: 'sg-22',
     category: 'signs',
-    prompt: 'What does this sign warn you about?',
-    sign: 'steep-hill',
+    prompt: 'A yellow sign warns of a steep downgrade ahead. The safest way to drive a long, steep hill is to:',
     choices: [
-      'A steep downgrade — shift to a lower gear instead of riding your brakes',
-      'A bump in the road',
-      'A truck weigh station',
-      'A bridge ahead',
+      'Shift into a lower gear and let the engine help hold your speed',
+      'Hold the brake pedal down the whole way',
+      'Shift into neutral and coast',
+      'Turn off the engine to save fuel',
     ],
     answer: 0,
     explanation:
-      'On a long downgrade, continuous braking overheats the brakes. Shift into a lower gear and use the engine to help hold your speed.',
+      'Continuous braking on a long downgrade overheats the brakes and they fade. Shift down and use engine braking, applying the brakes in short, firm applications.',
   },
   {
     id: 'sg-23',
     category: 'signs',
     prompt: 'This sign means:',
-    sign: 'lane-ends',
+    sign: 'W4-2',
     choices: [
       'The right lane ends ahead — merge and take turns with other drivers',
       'A new lane is being added',
@@ -304,7 +300,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-24',
     category: 'signs',
     prompt: 'A square or rectangular sign with black letters on a white background usually:',
-    sign: 'speed-limit',
+    sign: 'R2-1',
     choices: [
       'Warns of a hazard',
       'States a law you must obey (regulatory sign)',
@@ -319,7 +315,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-25',
     category: 'signs',
     prompt: 'What does this sign prohibit?',
-    sign: 'no-u-turn',
+    sign: 'R3-4',
     choices: ['Left turns', 'U-turns', 'Right turns on red', 'Parking'],
     answer: 1,
     explanation:
@@ -329,7 +325,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-26',
     category: 'signs',
     prompt: 'This sign tells you to:',
-    sign: 'keep-right',
+    sign: 'R4-7',
     choices: [
       'Keep right of the island or obstruction ahead',
       'Turn right at the next street',
@@ -343,7 +339,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-27',
     category: 'signs',
     prompt: 'You are at an intersection with a traffic light and this sign. You want to turn right and the light is red. You may:',
-    sign: 'no-turn-on-red',
+    sign: 'R10-11',
     choices: [
       'Turn right after a full stop',
       'Not turn — you must wait for a green light',
@@ -358,22 +354,22 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-28',
     category: 'signs',
     prompt: 'What does this sign mean?',
-    sign: 'traffic-circle',
+    sign: 'W11-3',
     choices: [
-      'A traffic circle is ahead — be ready to yield to traffic already in the circle',
-      'Make a U-turn ahead',
-      'A detour loops back',
-      'Winding road ahead',
+      'Deer cross here — slow down and expect more than one',
+      'A hunting area is ahead',
+      'Livestock may be on the road',
+      'A wildlife refuge entrance',
     ],
     answer: 0,
     explanation:
-      'In New Jersey, unless signs or signals say otherwise, traffic entering a circle must yield to traffic already in the circle.',
+      'Deer are most active at dawn and dusk, and they travel in groups — if one crosses, expect others. Brake firmly and stay in your lane rather than swerving into another.',
   },
   {
     id: 'sg-29',
     category: 'signs',
     prompt: 'A flashing yellow-green pedestrian sign with a person symbol appears at a crosswalk. New Jersey law requires you to:',
-    sign: 'pedestrian-crossing',
+    sign: 'W11-2',
     choices: [
       'Sound your horn to warn the pedestrian',
       'Stop and stay stopped for a pedestrian in a marked crosswalk',
@@ -388,7 +384,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-30',
     category: 'signs',
     prompt: 'This sign means:',
-    sign: 'narrow-bridge',
+    sign: 'W5-2',
     choices: [
       'The bridge ahead is narrow — slow down and stay centered in your lane',
       'The bridge is closed',
@@ -402,7 +398,6 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-31',
     category: 'signs',
     prompt: 'You approach a work zone and a flagger signals you to stop, but the traffic light ahead is green. You must:',
-    sign: 'flagger',
     choices: [
       'Obey the green light',
       'Obey the flagger',
@@ -416,7 +411,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-32',
     category: 'signs',
     prompt: 'What does this sign mean?',
-    sign: 'sharp-turn-right',
+    sign: 'W1-1',
     choices: [
       'A sharp right-angle turn is ahead',
       'A gentle curve is ahead',
@@ -445,7 +440,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-34',
     category: 'signs',
     prompt: 'This sign means:',
-    sign: 'signal-ahead',
+    sign: 'W3-3',
     choices: [
       'A traffic signal is ahead, possibly hidden by a hill or curve — be ready to stop',
       'The signal ahead is out of order',
@@ -459,7 +454,7 @@ export const SIGN_QUESTIONS: Question[] = [
     id: 'sg-35',
     category: 'signs',
     prompt: 'This sign means:',
-    sign: 'bicycle-crossing',
+    sign: 'W11-1',
     choices: [
       'Bicycles are prohibited',
       'Bicyclists may be crossing or sharing the road ahead',
@@ -469,5 +464,185 @@ export const SIGN_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       'Watch for riders. New Jersey requires drivers to give a bicyclist at least four feet of space when passing, or slow to 25 mph and pass safely.',
+  },
+  {
+    id: 'sg-36',
+    category: 'signs',
+    prompt: 'You see a row of these signs along the outside of a curve. They tell you:',
+    sign: 'W1-8',
+    choices: [
+      'The road changes direction sharply — follow the chevrons around the curve',
+      'A passing lane is opening',
+      'The shoulder is closed',
+      'A detour begins here',
+    ],
+    answer: 0,
+    explanation:
+      'Chevron alignment signs mark the outside of a sharp curve. Keep them on your left as you go around and slow to the advisory speed.',
+  },
+  {
+    id: 'sg-37',
+    category: 'signs',
+    prompt: 'What does this sign mean?',
+    sign: 'R4-1',
+    choices: [
+      'Passing is prohibited until you see a PASS WITH CARE sign',
+      'Trucks may not use this lane',
+      'No parking along this stretch',
+      'Do not change lanes in a work zone',
+    ],
+    answer: 0,
+    explanation:
+      'DO NOT PASS marks the start of a no-passing stretch. Passing is separately illegal within 100 feet of an intersection, bridge, tunnel or railroad crossing.',
+  },
+  {
+    id: 'sg-38',
+    category: 'signs',
+    prompt: 'A yellow plaque like this hangs below a curve warning sign. The number on it is:',
+    sign: 'W13-1P',
+    choices: [
+      'The advisory speed — the safe speed for that curve or ramp',
+      'The legal speed limit, enforced like any other',
+      'The minimum speed',
+      'The distance to the curve',
+    ],
+    answer: 0,
+    explanation:
+      'Advisory speeds are recommendations rather than posted limits, but they are set for the geometry of that curve or ramp. Taking a ramp far above the advisory speed is a common cause of rollovers.',
+  },
+  {
+    id: 'sg-39',
+    category: 'signs',
+    prompt: 'This sign means:',
+    sign: 'S5-1',
+    choices: [
+      'The school-zone speed limit applies whenever the yellow beacon is flashing',
+      'Schools operate at this speed limit only on weekdays',
+      'The limit applies 24 hours a day',
+      'The speed limit is advisory in a school zone',
+    ],
+    answer: 0,
+    explanation:
+      'When the beacon flashes, the lower school limit is in force — and New Jersey doubles fines for speeding in a school zone.',
+  },
+  {
+    id: 'sg-40',
+    category: 'signs',
+    prompt: 'What does this sign warn you about?',
+    sign: 'W2-5',
+    choices: [
+      'The road ahead splits — choose your direction early',
+      'A side road enters from the right',
+      'Two lanes merge into one',
+      'A railroad crossing is ahead',
+    ],
+    answer: 0,
+    explanation:
+      'A Y-intersection warning means the roadway divides ahead. Decide which branch you want and signal before you reach the fork.',
+  },
+  {
+    id: 'sg-41',
+    category: 'signs',
+    prompt: 'This sign tells you that:',
+    sign: 'W6-2',
+    choices: [
+      'The median ends ahead and you will share an undivided road with oncoming traffic',
+      'A divided highway begins',
+      'The left lane is closing',
+      'A one-way street starts ahead',
+    ],
+    answer: 0,
+    explanation:
+      'Divided highway ends: the physical separation from oncoming traffic is about to disappear. Keep right and do not pass unless the markings allow it.',
+  },
+  {
+    id: 'sg-42',
+    category: 'signs',
+    prompt: 'This sign is posted over a lane. It means:',
+    sign: 'R3-5',
+    choices: [
+      'Traffic in this lane must make the movement shown by the arrow',
+      'The movement shown is prohibited from this lane',
+      'The lane is reserved for buses',
+      'The arrow shows a suggested route',
+    ],
+    answer: 0,
+    explanation:
+      'A mandatory movement lane-control sign means you must go the way the arrow points. Choose your lane early rather than cutting across at the intersection.',
+  },
+  {
+    id: 'sg-43',
+    category: 'signs',
+    prompt: 'This red-bordered sign means:',
+    sign: 'R5-2',
+    choices: [
+      'Trucks are prohibited on this road',
+      'Trucks must use the right lane',
+      'A truck weigh station is ahead',
+      'Trucks must stop',
+    ],
+    answer: 0,
+    explanation:
+      'A red circle and slash always prohibits whatever it covers. Truck restrictions usually mean a weight limit, a low bridge or a residential street.',
+  },
+  {
+    id: 'sg-44',
+    category: 'signs',
+    prompt: 'This marker identifies:',
+    sign: 'M1-1',
+    choices: [
+      'An interstate highway',
+      'A US highway',
+      'A state highway',
+      'A county road',
+    ],
+    answer: 0,
+    explanation:
+      'The red, white and blue shield marks interstates such as I-80 and I-295. A black-and-white shield is a US route; a square marker is a state route like NJ 35.',
+  },
+  {
+    id: 'sg-45',
+    category: 'signs',
+    prompt: 'You are on a highway and pass this sign at the start of an exit ramp. The striped pavement beside it is a gore area, which you must:',
+    sign: 'E5-1',
+    choices: [
+      'Never drive across — if you miss the exit, continue to the next one',
+      'Use to slow down before the ramp',
+      'Cross only with your signal on',
+      'Use as a breakdown lane',
+    ],
+    answer: 0,
+    explanation:
+      'The gore is the striped wedge between the highway and the ramp. Cutting across it at the last second is both illegal and a common cause of crashes.',
+  },
+  {
+    id: 'sg-46',
+    category: 'signs',
+    prompt: 'What does this sign mean?',
+    sign: 'W5-1',
+    choices: [
+      'The pavement gets narrower ahead — slow down and keep to your side',
+      'A bridge is out',
+      'Two lanes merge',
+      'The shoulder ends',
+    ],
+    answer: 0,
+    explanation:
+      'Road narrows warns that the travel width shrinks, though not to a single lane. Slow down and watch oncoming traffic closely.',
+  },
+  {
+    id: 'sg-47',
+    category: 'signs',
+    prompt: 'This sign warns of:',
+    sign: 'W17-1',
+    choices: [
+      'A raised speed hump, usually on a residential street',
+      'A dip in the road',
+      'A railroad crossing',
+      'A rough shoulder',
+    ],
+    answer: 0,
+    explanation:
+      'Speed humps are traffic-calming devices on local streets. Slow to the posted advisory speed — hitting one at speed can damage your vehicle and throw it off line.',
   },
 ]

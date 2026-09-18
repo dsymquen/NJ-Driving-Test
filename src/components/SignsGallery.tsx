@@ -12,7 +12,7 @@ const GROUPS: { id: SignGroup | 'all'; label: string }[] = [
   { id: 'school', label: 'School' },
   { id: 'railroad', label: 'Railroad' },
   { id: 'guide', label: 'Guide' },
-  { id: 'services', label: 'Services' },
+  { id: 'marker', label: 'Route markers' },
 ]
 
 export function SignsGallery(): JSX.Element {
@@ -25,8 +25,8 @@ export function SignsGallery(): JSX.Element {
         <span className="eyebrow">Reference</span>
         <h1 style={{ fontSize: 24, marginTop: 4 }}>Road sign gallery</h1>
         <p className="muted" style={{ marginTop: 6 }}>
-          The test asks about shapes and colors as much as words. Learn the shape first — you can identify a
-          sign covered in snow by its outline alone.
+          The official FHWA artwork, the same signs you will see on the test and on the road. Learn the
+          shape and color first — you can identify a sign covered in snow by its outline alone.
         </p>
       </section>
 
@@ -45,9 +45,12 @@ export function SignsGallery(): JSX.Element {
 
       <div className="sign-grid">
         {shown.map((spec) => (
-          <div key={spec.id} className="sign-card">
-            <Sign spec={spec} size={110} />
+          <div key={spec.code} className="sign-card">
+            <Sign code={spec.code} size={112} />
             <b>{spec.name}</b>
+            <span className="sign-meta">
+              {spec.shape} · {spec.color}
+            </span>
             <p>{spec.meaning}</p>
           </div>
         ))}

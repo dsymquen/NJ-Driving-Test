@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { JSX } from 'react'
 import { SIGNS } from '../data/signs'
-import type { SignSpec } from '../data/signs'
 import { ALL_FACTS } from '../data/handbook'
 import type { Fact } from '../data/handbook'
 import { shuffle } from '../lib/quiz'
@@ -11,7 +10,7 @@ type Deck = 'signs' | 'facts'
 
 interface Card {
   key: string
-  sign?: SignSpec
+  signCode?: string
   front: string
   back: string
   note?: string
@@ -19,8 +18,8 @@ interface Card {
 
 function signCards(): Card[] {
   return SIGNS.map((spec) => ({
-    key: `sign-${spec.id}`,
-    sign: spec,
+    key: `sign-${spec.code}`,
+    signCode: spec.code,
     front: 'What does this sign mean?',
     back: spec.name,
     note: spec.meaning,
@@ -107,14 +106,16 @@ export function Flashcards(): JSX.Element {
         }}
       >
         <div>
-          {card.sign && !flipped ? <Sign spec={card.sign} size={150} title="Flashcard sign" /> : null}
+          {card.signCode ? (
+            <Sign code={card.signCode} size={150} title={flipped ? card.back : 'Flashcard sign'} />
+          ) : null}
           {flipped ? (
             <>
               <div className="flash-back">{card.back}</div>
               {card.note ? <p className="flash-note">{card.note}</p> : null}
             </>
           ) : (
-            <div className="flash-front" style={{ marginTop: card.sign ? 14 : 0 }}>
+            <div className="flash-front" style={{ marginTop: card.signCode ? 14 : 0 }}>
               {card.front}
             </div>
           )}

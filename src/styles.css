@@ -509,7 +509,7 @@ main {
 .sign-frame {
   display: grid;
   place-items: center;
-  padding: 14px;
+  padding: 10px;
   margin-bottom: 14px;
   background: var(--panel-2);
   border: 1px solid var(--line);
@@ -518,6 +518,10 @@ main {
 
 .sign {
   display: block;
+  object-fit: contain;
+  /* MUTCD faces are white or yellow; a soft ring keeps them from bleeding into
+     the dark panel without drawing a fake border on the sign itself. */
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.35));
 }
 
 .choices {
@@ -975,4 +979,11 @@ details.section > *:not(summary) {
   .quiz-foot .btn {
     flex: 1;
   }
+}
+
+.sign-meta {
+  display: block;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 3px;
 }

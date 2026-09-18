@@ -1,7 +1,6 @@
 import type { JSX } from 'react'
 import { CATEGORY_BY_ID } from '../data/types'
 import type { CategoryId } from '../data/types'
-import { SIGN_BY_ID } from '../data/signs'
 import { PASS_MARK } from '../lib/storage'
 import type { ShuffledQuestion } from '../lib/quiz'
 import { formatDuration } from '../lib/quiz'
@@ -129,11 +128,11 @@ export function Results({
         <section>
           <h2 style={{ fontSize: 16, marginBottom: 10 }}>What you missed</h2>
           {wrong.map(({ item, answer }) => {
-            const sign = item.question.sign ? SIGN_BY_ID[item.question.sign] : undefined
+            const signCode = item.question.sign
             return (
               <div key={item.question.id} className="review-item">
                 <div className="row" style={{ alignItems: 'flex-start', gap: 14 }}>
-                  {sign ? <Sign spec={sign} size={72} /> : null}
+                  {signCode ? <Sign code={signCode} size={76} title="Sign from this question" /> : null}
                   <div style={{ flex: 1, minWidth: 200 }}>
                     <div className="review-q">{item.question.prompt}</div>
                     <div className="review-line bad">
